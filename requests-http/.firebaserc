@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "curso-angular-mariana"
+  },
+  "targets": {
+    "curso-angular-mariana": {
+      "hosting": {
+        "requests-http": [
+          "curso-angular-mariana"
+        ]
+      }
+    }
+  }
+}

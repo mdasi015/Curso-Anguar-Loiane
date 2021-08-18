@@ -1,0 +1,19 @@
+<div style="margin-top: 20px">
+  <div class="input-group mb-3">
+    <input type="file" class="form-control" id="customFile" (change)="onChange($event)" multiple/>
+    <label class="input-group-text" for="inputGroupFile02" id="customFileLabel">Selecionar Arquivo</label>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" [style.width]="progress + '%'"> {{ progress }} %</div>
+  </div>
+</div>
+
+<div style="margin-top: 10px">
+  <button type="button" class="btn btn-primary" (click)="onUpload()" [disabled]="!files">Upload</button>
+</div>
+<div style="margin-top: 10px">
+  <button type="button" class="btn btn-primary" (click)="onDownloadExcel()">Download Excel</button>
+</div>
+<div style="margin-top: 10px">
+  <button type="button" class="btn btn-primary" (click)="onDownloadPDF()">Download PDF</button>
+</div>
