@@ -1,0 +1,20 @@
+<div class="row mb-3">
+  <div class="row">
+    <label for="disabled" class="col-sm-2 col-form-label col-form-label-lg">#</label>
+    <div class="col-sm-10">
+      <input disabled [(ngModel)]="aluno.id" id="disabled" type="text" class="form-control form-control-lg" id="colFormLabelLg">
+    </div>
+
+    <div class="row">
+        <label for="name" class="col-sm-2 col-form-label col-form-label-lg">Nome</label>
+        <div class="col-sm-10">
+        <input id="name" [(ngModel)]="aluno.name" type="text" class="form-control form-control-lg" (input)="onInput()">
+    </div>
+
+    <div class="row">
+        <label for="email" class="col-sm-2 col-form-label col-form-label-lg">E-mail</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="aluno.email" type="email" class="form-control form-control-lg">
+    </div>
+
+  </div>
